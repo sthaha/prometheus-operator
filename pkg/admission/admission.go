@@ -45,7 +45,7 @@ const (
 	errUnmarshalRules            = "Cannot unmarshal rules from spec"
 	errUnmarshalConfig           = "Cannot unmarhsal config from spec"
 
-	group                  = "monitoring.coreos.com"
+	group                  = "monitoring.rhobs"
 	prometheusRuleResource = monitoringv1.PrometheusRuleName
 	prometheusRuleVersion  = monitoringv1.Version
 

@@ -52,7 +52,7 @@ func (f *genericInformer) Lister() cache.GenericLister {
 // TODO extend this to unknown resources with a client pool
 func (f *sharedInformerFactory) ForResource(resource schema.GroupVersionResource) (GenericInformer, error) {
 	switch resource {
-	// Group=monitoring.coreos.com, Version=v1
+	// Group=monitoring.rhobs, Version=v1
 	case v1.SchemeGroupVersion.WithResource("alertmanagers"):
 		return &genericInformer{resource: resource.GroupResource(), informer: f.Monitoring().V1().Alertmanagers().Informer()}, nil
 	case v1.SchemeGroupVersion.WithResource("podmonitors"):
@@ -68,11 +68,11 @@ func (f *sharedInformerFactory) ForResource(resource schema.GroupVersionResource
 	case v1.SchemeGroupVersion.WithResource("thanosrulers"):
 		return &genericInformer{resource: resource.GroupResource(), informer: f.Monitoring().V1().ThanosRulers().Informer()}, nil
 
-		// Group=monitoring.coreos.com, Version=v1alpha1
+		// Group=monitoring.rhobs, Version=v1alpha1
 	case v1alpha1.SchemeGroupVersion.WithResource("alertmanagerconfigs"):
 		return &genericInformer{resource: resource.GroupResource(), informer: f.Monitoring().V1alpha1().AlertmanagerConfigs().Informer()}, nil
 
-		// Group=monitoring.coreos.com, Version=v1beta1
+		// Group=monitoring.rhobs, Version=v1beta1
 	case v1beta1.SchemeGroupVersion.WithResource("alertmanagerconfigs"):
 		return &genericInformer{resource: resource.GroupResource(), informer: f.Monitoring().V1beta1().AlertmanagerConfigs().Informer()}, nil
 

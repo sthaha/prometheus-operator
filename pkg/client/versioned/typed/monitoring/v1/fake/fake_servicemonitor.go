@@ -34,9 +34,9 @@ type FakeServiceMonitors struct {
 	ns   string
 }
 
-var servicemonitorsResource = schema.GroupVersionResource{Group: "monitoring.coreos.com", Version: "v1", Resource: "servicemonitors"}
+var servicemonitorsResource = schema.GroupVersionResource{Group: "monitoring.rhobs", Version: "v1", Resource: "servicemonitors"}
 
-var servicemonitorsKind = schema.GroupVersionKind{Group: "monitoring.coreos.com", Version: "v1", Kind: "ServiceMonitor"}
+var servicemonitorsKind = schema.GroupVersionKind{Group: "monitoring.rhobs", Version: "v1", Kind: "ServiceMonitor"}
 
 // Get takes name of the serviceMonitor, and returns the corresponding serviceMonitor object, and an error if there is any.
 func (c *FakeServiceMonitors) Get(ctx context.Context, name string, options v1.GetOptions) (result *monitoringv1.ServiceMonitor, err error) {

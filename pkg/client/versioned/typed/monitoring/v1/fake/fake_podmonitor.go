@@ -34,9 +34,9 @@ type FakePodMonitors struct {
 	ns   string
 }
 
-var podmonitorsResource = schema.GroupVersionResource{Group: "monitoring.coreos.com", Version: "v1", Resource: "podmonitors"}
+var podmonitorsResource = schema.GroupVersionResource{Group: "monitoring.rhobs", Version: "v1", Resource: "podmonitors"}
 
-var podmonitorsKind = schema.GroupVersionKind{Group: "monitoring.coreos.com", Version: "v1", Kind: "PodMonitor"}
+var podmonitorsKind = schema.GroupVersionKind{Group: "monitoring.rhobs", Version: "v1", Kind: "PodMonitor"}
 
 // Get takes name of the podMonitor, and returns the corresponding podMonitor object, and an error if there is any.
 func (c *FakePodMonitors) Get(ctx context.Context, name string, options v1.GetOptions) (result *monitoringv1.PodMonitor, err error) {

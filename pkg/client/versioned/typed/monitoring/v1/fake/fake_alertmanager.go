@@ -34,9 +34,9 @@ type FakeAlertmanagers struct {
 	ns   string
 }
 
-var alertmanagersResource = schema.GroupVersionResource{Group: "monitoring.coreos.com", Version: "v1", Resource: "alertmanagers"}
+var alertmanagersResource = schema.GroupVersionResource{Group: "monitoring.rhobs", Version: "v1", Resource: "alertmanagers"}
 
-var alertmanagersKind = schema.GroupVersionKind{Group: "monitoring.coreos.com", Version: "v1", Kind: "Alertmanager"}
+var alertmanagersKind = schema.GroupVersionKind{Group: "monitoring.rhobs", Version: "v1", Kind: "Alertmanager"}
 
 // Get takes name of the alertmanager, and returns the corresponding alertmanager object, and an error if there is any.
 func (c *FakeAlertmanagers) Get(ctx context.Context, name string, options v1.GetOptions) (result *monitoringv1.Alertmanager, err error) {

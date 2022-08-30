@@ -4090,7 +4090,7 @@ func testPromNamespaceEnforcementExclusion(t *testing.T) {
 			p.Spec.ExcludedFromEnforcement = []monitoringv1.ObjectReference{
 				{
 					Namespace: ns,
-					Group:     "monitoring.coreos.com",
+					Group:     "monitoring.rhobs",
 					Resource:  monitoringv1.ServiceMonitorName,
 				},
 			}
