@@ -17,12 +17,12 @@ main() {
 
   # change the kubebuilder group to monitoring.rhobs
   # change the category  to rhobs-prometheus-operator
-  # remove the short prom
+  # remove all shortnames
 
   find \( -path "./.git" -o -path "./rhobs" \) -prune -o -type f -exec \
     sed -i  \
       -e 's|monitoring.coreos.com|monitoring.rhobs|g'   \
-      -e 's|+kubebuilder:resource:categories="prometheus-operator",shortName="prom"|+kubebuilder:resource:categories="rhobs-prometheus-operator"|g' \
+      -e 's|+kubebuilder:resource:categories="prometheus-operator".*|+kubebuilder:resource:categories="rhobs-prometheus-operator"|g' \
   {} \;
 
   make generate
