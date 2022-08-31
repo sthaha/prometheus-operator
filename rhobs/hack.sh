@@ -12,15 +12,20 @@ main() {
   # all files are relative to the root of the project
   cd "$PROJECT_ROOT"
 
-  # change the kubebuilder group to
-  # find . -path ./.git -prune  -path ./rhobs -type f \
-  find \( -path "./.git" -o -path "./rhobs" \) -prune -o -type f \
-    -exec  sed -i  \
-      -e 's|monitoring.coreos.com|monitoring.rhobs|g'  {} \;
-
   rm -f example/prometheus-operator-crd-full/monitoring.coreos.com*
   rm -f example/prometheus-operator-crd/monitoring.coreos.com*
 
+  # change the kubebuilder group to monitoring.rhobs
+  # change the category  to rhobs-prometheus-operator
+  # remove the short prom
+
+  find \( -path "./.git" -o -path "./rhobs" \) -prune -o -type f -exec \
+    sed -i  \
+      -e 's|monitoring.coreos.com|monitoring.rhobs|g'   \
+      -e 's|+kubebuilder:resource:categories="prometheus-operator",shortName="prom"|+kubebuilder:resource:categories="rhobs-prometheus-operator"|g' \
+  {} \;
+
+  make generate
   return $?
 }
 
