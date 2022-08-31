@@ -12,14 +12,11 @@
     "group": "monitoring.rhobs",
     "names": {
       "categories": [
-        "prometheus-operator"
+        "rhobs-prometheus-operator"
       ],
       "kind": "Probe",
       "listKind": "ProbeList",
       "plural": "probes",
-      "shortNames": [
-        "prb"
-      ],
       "singular": "probe"
     },
     "scope": "Namespaced",

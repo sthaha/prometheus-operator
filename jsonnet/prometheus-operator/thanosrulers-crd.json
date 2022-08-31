@@ -12,14 +12,11 @@
     "group": "monitoring.rhobs",
     "names": {
       "categories": [
-        "prometheus-operator"
+        "rhobs-prometheus-operator"
       ],
       "kind": "ThanosRuler",
       "listKind": "ThanosRulerList",
       "plural": "thanosrulers",
-      "shortNames": [
-        "ruler"
-      ],
       "singular": "thanosruler"
     },
     "scope": "Namespaced",

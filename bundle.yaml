@@ -10,12 +10,10 @@ spec:
   group: monitoring.rhobs
   names:
     categories:
-    - prometheus-operator
+    - rhobs-prometheus-operator
     kind: AlertmanagerConfig
     listKind: AlertmanagerConfigList
     plural: alertmanagerconfigs
-    shortNames:
-    - amcfg
     singular: alertmanagerconfig
   scope: Namespaced
   versions:
@@ -4485,12 +4483,10 @@ spec:
   group: monitoring.rhobs
   names:
     categories:
-    - prometheus-operator
+    - rhobs-prometheus-operator
     kind: Alertmanager
     listKind: AlertmanagerList
     plural: alertmanagers
-    shortNames:
-    - am
     singular: alertmanager
   scope: Namespaced
   versions:
@@ -11230,12 +11226,10 @@ spec:
   group: monitoring.rhobs
   names:
     categories:
-    - prometheus-operator
+    - rhobs-prometheus-operator
     kind: PodMonitor
     listKind: PodMonitorList
     plural: podmonitors
-    shortNames:
-    - pmon
     singular: podmonitor
   scope: Namespaced
   versions:
@@ -11893,12 +11887,10 @@ spec:
   group: monitoring.rhobs
   names:
     categories:
-    - prometheus-operator
+    - rhobs-prometheus-operator
     kind: Probe
     listKind: ProbeList
     plural: probes
-    shortNames:
-    - prb
     singular: probe
   scope: Namespaced
   versions:
@@ -12597,12 +12589,10 @@ spec:
   group: monitoring.rhobs
   names:
     categories:
-    - prometheus-operator
+    - rhobs-prometheus-operator
     kind: Prometheus
     listKind: PrometheusList
     plural: prometheuses
-    shortNames:
-    - prom
     singular: prometheus
   scope: Namespaced
   versions:
@@ -21364,12 +21354,10 @@ spec:
   group: monitoring.rhobs
   names:
     categories:
-    - prometheus-operator
+    - rhobs-prometheus-operator
     kind: PrometheusRule
     listKind: PrometheusRuleList
     plural: prometheusrules
-    shortNames:
-    - promrule
     singular: prometheusrule
   scope: Namespaced
   versions:
@@ -21462,12 +21450,10 @@ spec:
   group: monitoring.rhobs
   names:
     categories:
-    - prometheus-operator
+    - rhobs-prometheus-operator
     kind: ServiceMonitor
     listKind: ServiceMonitorList
     plural: servicemonitors
-    shortNames:
-    - smon
     singular: servicemonitor
   scope: Namespaced
   versions:
@@ -22146,12 +22132,10 @@ spec:
   group: monitoring.rhobs
   names:
     categories:
-    - prometheus-operator
+    - rhobs-prometheus-operator
     kind: ThanosRuler
     listKind: ThanosRulerList
     plural: thanosrulers
-    shortNames:
-    - ruler
     singular: thanosruler
   scope: Namespaced
   versions:

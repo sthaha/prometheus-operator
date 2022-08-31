@@ -12,14 +12,11 @@
     "group": "monitoring.rhobs",
     "names": {
       "categories": [
-        "prometheus-operator"
+        "rhobs-prometheus-operator"
       ],
       "kind": "ServiceMonitor",
       "listKind": "ServiceMonitorList",
       "plural": "servicemonitors",
-      "shortNames": [
-        "smon"
-      ],
       "singular": "servicemonitor"
     },
     "scope": "Namespaced",

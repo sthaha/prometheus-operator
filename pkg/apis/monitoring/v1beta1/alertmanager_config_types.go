@@ -37,7 +37,7 @@ const (
 
 // +genclient
 // +k8s:openapi-gen=true
-// +kubebuilder:resource:categories="prometheus-operator",shortName="amcfg"
+// +kubebuilder:resource:categories="rhobs-prometheus-operator"
 
 // AlertmanagerConfig defines a namespaced AlertmanagerConfig to be aggregated
 // across multiple namespaces configuring one Alertmanager cluster.

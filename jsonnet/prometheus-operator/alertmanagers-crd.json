@@ -12,14 +12,11 @@
     "group": "monitoring.rhobs",
     "names": {
       "categories": [
-        "prometheus-operator"
+        "rhobs-prometheus-operator"
       ],
       "kind": "Alertmanager",
       "listKind": "AlertmanagerList",
       "plural": "alertmanagers",
-      "shortNames": [
-        "am"
-      ],
       "singular": "alertmanager"
     },
     "scope": "Namespaced",

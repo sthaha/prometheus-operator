@@ -12,14 +12,11 @@
     "group": "monitoring.rhobs",
     "names": {
       "categories": [
-        "prometheus-operator"
+        "rhobs-prometheus-operator"
       ],
       "kind": "PodMonitor",
       "listKind": "PodMonitorList",
       "plural": "podmonitors",
-      "shortNames": [
-        "pmon"
-      ],
       "singular": "podmonitor"
     },
     "scope": "Namespaced",
