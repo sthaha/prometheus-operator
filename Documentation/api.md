@@ -462,7 +462,7 @@ ObjectReference references a PodMonitor, ServiceMonitor, Probe or PrometheusRule
 
 | Field | Description | Scheme | Required |
 | ----- | ----------- | ------ | -------- |
-| group | Group of the referent. When not specified, it defaults to `monitoring.coreos.com` | string | true |
+| group | Group of the referent. When not specified, it defaults to `monitoring.rhobs` | string | true |
 | resource | Resource of the referent. | string | true |
 | namespace | Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/ | string | true |
 | name | Name of the referent. When not set, all resources are matched. | string | false |

@@ -34,9 +34,9 @@ type FakeThanosRulers struct {
 	ns   string
 }
 
-var thanosrulersResource = schema.GroupVersionResource{Group: "monitoring.coreos.com", Version: "v1", Resource: "thanosrulers"}
+var thanosrulersResource = schema.GroupVersionResource{Group: "monitoring.rhobs", Version: "v1", Resource: "thanosrulers"}
 
-var thanosrulersKind = schema.GroupVersionKind{Group: "monitoring.coreos.com", Version: "v1", Kind: "ThanosRuler"}
+var thanosrulersKind = schema.GroupVersionKind{Group: "monitoring.rhobs", Version: "v1", Kind: "ThanosRuler"}
 
 // Get takes name of the thanosRuler, and returns the corresponding thanosRuler object, and an error if there is any.
 func (c *FakeThanosRulers) Get(ctx context.Context, name string, options v1.GetOptions) (result *monitoringv1.ThanosRuler, err error) {

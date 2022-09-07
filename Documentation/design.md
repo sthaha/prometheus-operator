@@ -110,7 +110,7 @@ Alerts and recording rules can be saved and applied as YAML files, and dynamical
 The `AlertmanagerConfig` custom resource definition (CRD) declaratively specifies subsections of the Alertmanager configuration, allowing routing of alerts to custom receivers, and setting inhibit rules. The `AlertmanagerConfig` can be defined on a namespace level providing an aggregated config to Alertmanager. An example on how to use it is provided below. Please be aware that this CRD is not stable yet.
 
 ```yaml mdox-exec="cat example/user-guides/alerting/alertmanager-config-example.yaml"
-apiVersion: monitoring.coreos.com/v1alpha1
+apiVersion: monitoring.rhobs/v1alpha1
 kind: AlertmanagerConfig
 metadata:
   name: config-example

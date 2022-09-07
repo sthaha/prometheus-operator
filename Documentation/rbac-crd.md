@@ -38,7 +38,7 @@ metadata:
     rbac.authorization.k8s.io/aggregate-to-edit: "true"
     rbac.authorization.k8s.io/aggregate-to-view: "true"
 rules:
-- apiGroups: ["monitoring.coreos.com"]
+- apiGroups: ["monitoring.rhobs"]
   resources: ["alertmanagers", "alertmanagerconfigs", "prometheuses", "prometheusrules", "servicemonitors", "podmonitors", "probes"]
   verbs: ["get", "list", "watch"]
 ---
@@ -50,7 +50,7 @@ metadata:
     rbac.authorization.k8s.io/aggregate-to-edit: "true"
     rbac.authorization.k8s.io/aggregate-to-admin: "true"
 rules:
-- apiGroups: ["monitoring.coreos.com"]
+- apiGroups: ["monitoring.rhobs"]
   resources: ["alertmanagers", "alertmanagerconfigs", "prometheuses", "prometheusrules", "servicemonitors", "podmonitors", "probes"]
   verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
 ```

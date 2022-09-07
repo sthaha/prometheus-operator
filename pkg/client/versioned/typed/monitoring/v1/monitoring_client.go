@@ -35,7 +35,7 @@ type MonitoringV1Interface interface {
 	ThanosRulersGetter
 }
 
-// MonitoringV1Client is used to interact with features provided by the monitoring.coreos.com group.
+// MonitoringV1Client is used to interact with features provided by the monitoring.rhobs group.
 type MonitoringV1Client struct {
 	restClient rest.Interface
 }

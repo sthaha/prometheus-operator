@@ -40,7 +40,7 @@ const (
 // across multiple namespaces configuring one Alertmanager cluster.
 // +genclient
 // +k8s:openapi-gen=true
-// +kubebuilder:resource:categories="prometheus-operator",shortName="amcfg"
+// +kubebuilder:resource:categories="rhobs-prometheus-operator"
 // +kubebuilder:storageversion
 type AlertmanagerConfig struct {
 	metav1.TypeMeta   `json:",inline"`

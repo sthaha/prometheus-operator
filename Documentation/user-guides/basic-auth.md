@@ -8,7 +8,7 @@
 To authenticate a `ServiceMonitor`s over a metrics endpoint use [`basicAuth`](../api.md#basicauth)
 
 ```yaml
-apiVersion: monitoring.coreos.com/v1
+apiVersion: monitoring.rhobs/v1
 kind: ServiceMonitor
 metadata:
   labels:
