@@ -149,7 +149,7 @@ func TestEnforceNamespaceLabelOnPrometheusRules(t *testing.T) {
 			ExcludedFromEnforcement: []monitoringv1.ObjectReference{
 				{
 					Namespace: "foo",
-					Group:     "monitoring.coreos.com",
+					Group:     "monitoring.rhobs",
 					Resource:  monitoringv1.PrometheusRuleName,
 				},
 			},

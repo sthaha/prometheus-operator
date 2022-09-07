@@ -29,7 +29,7 @@ type MonitoringV1alpha1Interface interface {
 	AlertmanagerConfigsGetter
 }
 
-// MonitoringV1alpha1Client is used to interact with features provided by the monitoring.coreos.com group.
+// MonitoringV1alpha1Client is used to interact with features provided by the monitoring.rhobs group.
 type MonitoringV1alpha1Client struct {
 	restClient rest.Interface
 }
