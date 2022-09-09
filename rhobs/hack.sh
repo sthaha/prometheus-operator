@@ -46,6 +46,12 @@ publish_images() {
 }
 
 
+generate_stripped_down_crds(){
+  mkdir -p example/stripped-down-crds
+  make stripped-down-crds.yaml
+  mv stripped-down-crds.yaml example/stripped-down-crds/all.yaml
+}
+
 main() {
   # all files are relative to the root of the project
   cd "$PROJECT_ROOT"
@@ -69,6 +75,7 @@ main() {
   version=$(head -n1 VERSION)
 
   make generate
+  generate_stripped_down_crds
   publish_images "$version"
 
   git add .
